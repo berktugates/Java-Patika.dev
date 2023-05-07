@@ -5,30 +5,30 @@ public class userLogin {
         String username,password,newPassword,choose;
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Kullanıcı adınızı giriniz: ");
+        System.out.print("Enter your username: ");
         username = input.nextLine();
-        System.out.print("Parolanızı giriniz: ");
+        System.out.print("Enter your password: ");
         password = input.nextLine();
 
         if(username.equals("berktugates") && password.equals("1903")){
-            System.out.print("Hesabınıza giriş yapılıyor lütfen bekleyiniz...");
+            System.out.print("Logging into your account, please wait...");
         }
         else {
-            System.out.println("Kullanıcı adınız veya parolanız yanlış.");
-            System.out.print("Parolanızı yeniden oluşturmak ister misiniz? [Y/N]: ");
+            System.out.println("Your username or password is incorrect.");
+            System.out.print("Would you like to reset your password? [Y/N]: ");
             choose = input.nextLine();
             switch (choose){
                 case "Y" :
-                    System.out.print("Yeni parolanızı giriniz: ");
+                    System.out.print("Enter your new password: ");
                     newPassword = input.nextLine();
                     if (newPassword.equals(password)){
-                        System.out.print("Parolanız önceki parolanız ile aynı olamaz. Yeniden oluşturunuz.");
+                        System.out.print("Your password cannot be the same as your previous password. Rebuild.");
                     }
                     else {
-                        System.out.print("Parolanız değiştirilmiştir.");
+                        System.out.print("Your password has been changed.");
                     }
                 case "N":
-                    System.out.print("Hesabınıza tekrar giriş yapmayı deneyiniz.");
+                    System.out.print("Try logging into your account again.");
             }
 
         }
