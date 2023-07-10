@@ -25,15 +25,6 @@ Java language has been used in decoding this class diagram.
 - The class named SecurityGuard is a concrete sub class. It has 1 private attribute and 1 public method.
 
 
-## Installation
-- Clone the repository
-```
-git clone https://github.com/berktugates/Java-Patika.dev.git
-```
-- Run the following command in the terminal to run the application.
-```
-java Main.java
-```
 
 
 
